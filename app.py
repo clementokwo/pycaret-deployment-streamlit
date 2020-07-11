@@ -13,7 +13,7 @@ def predict(model, input_df):
 def run():
 
     from PIL import Image
-    image = Image.open('logo.png')
+    image = Image.open('logo.PNG')
     image_hospital = Image.open('hospital.jpg')
 
     st.image(image,use_column_width=False)
@@ -23,7 +23,7 @@ def run():
     ("Online", "Batch"))
 
     st.sidebar.info('This app is created to predict patient hospital charges')
-    st.sidebar.success('https://www.pycaret.org')
+    st.sidebar.success('Designed by Clement Odooh')
     
     st.sidebar.image(image_hospital)
 
